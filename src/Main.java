@@ -19,7 +19,6 @@ public class Main {
         int target = 18;
         System.out.println(Arrays.toString(TwoSum.twoSum(nums,target)));
 
-
         int[] prices = {7,1,5,3,6,4};
         System.out.println(BestTimeToBuyAndSellStock.maxProfit(prices));
 
@@ -28,11 +27,16 @@ public class Main {
         int[] nums2 = {2,5,6};
         int n = 3;
         System.out.println(Arrays.toString(Merge_Sorted_Array.mergeSortedArray(nums1,m,nums2,n)));
-        */
 
         int[] nums  = {0,1,0,3,12};
         MoveZeroesToEnd.movesZeroes(nums);
         System.out.println(Arrays.toString(nums));
+         */
+
+        int[] prices = {1,2,3,4,5};
+        System.out.println(BestTimetoBuyandSellStockII.stockProfit(prices));
+
+
 
     }
 }

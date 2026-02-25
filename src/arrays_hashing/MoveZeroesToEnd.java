@@ -13,6 +13,8 @@ public class MoveZeroesToEnd {
 
 
     public static void movesZeroes(int[] nums){
+
+        /*
         int count = 0;
         for(int i=0;i< nums.length;i++){
             if(nums[i] != 0){
@@ -22,6 +24,18 @@ public class MoveZeroesToEnd {
                 count++;
             }
         }
+         */
+
+        int j = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] != 0){
+                nums[j++] = nums[i];
+            }
+        }
+        while(j<nums.length){
+            nums[j++] = 0;
+        }
+
 
     }
 }
