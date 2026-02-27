@@ -34,11 +34,17 @@ public class Main {
 
         int[] prices = {1,2,3,4,5};
         System.out.println(BestTimetoBuyandSellStockII.stockProfit(prices));
-        */
 
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
         System.out.println(RemoveDulicatesFromSortedArray.removeDuplicates(nums));
         System.out.println(Arrays.toString(nums));
+
+        int[] nums = {1,7,3,6,5,6};
+        System.out.println(FindPivotIndex.pivotIndex(nums));
+        */
+
+        int[] nums = {2,2,1,1,1,2,2};
+        System.out.println(MajorityElement.majorityElement(nums));
 
 
     }
