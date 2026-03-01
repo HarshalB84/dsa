@@ -1,4 +1,5 @@
 import arrays_hashing.*;
+import sorting.BubbleSort;
 import strings.ValidAnagram;
 
 import java.util.Arrays;
@@ -49,10 +50,14 @@ public class Main {
         int[] nums = {-4,-1,0,3,10};
         System.out.println(Arrays.toString(SquareOfSortedArray.sortedSquare(nums)));
 
-        */
-
         int[] height = {0,1,0,2,1,0,1,3,2,1,2,1};
         System.out.println(TrappingRainWater.trap(height));
+        */
+
+        int[] nums = {10,7,3,6,5,6};
+        BubbleSort.bubbleSort(nums, nums.length);
+        System.out.println(Arrays.toString(nums));
+
 
     }
 }
