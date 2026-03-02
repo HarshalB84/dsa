@@ -1,5 +1,7 @@
 import arrays_hashing.*;
 import sorting.BubbleSort;
+import sorting.InsertionSort;
+import sorting.SelectionSort;
 import strings.ValidAnagram;
 
 import java.util.Arrays;
@@ -56,8 +58,12 @@ public class Main {
 
         int[] nums = {10,7,3,6,5,6};
         BubbleSort.bubbleSort(nums, nums.length);
-        System.out.println(Arrays.toString(nums));
+        System.out.println("Bubble Sort : "+ Arrays.toString(nums));
 
+        SelectionSort.selectionSort(nums,nums.length);
+        System.out.println("Selection Sort : "+Arrays.toString(nums));
 
+        InsertionSort.insertionSort(nums,nums.length);
+        System.out.println("Insertion Sort : "+Arrays.toString(nums));
     }
 }
