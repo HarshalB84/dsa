@@ -1,9 +1,10 @@
-import arrays_hashing.*;
+import arrays.AlternateElementsOfAnArray;
+import arrays.DuplicateWithinKDistanceInAnArray;
 import sorting.BubbleSort;
 import sorting.InsertionSort;
 import sorting.SelectionSort;
-import strings.ValidAnagram;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -54,7 +55,7 @@ public class Main {
 
         int[] height = {0,1,0,2,1,0,1,3,2,1,2,1};
         System.out.println(TrappingRainWater.trap(height));
-        */
+
 
         int[] nums = {10,7,3,6,5,6};
         BubbleSort.bubbleSort(nums, nums.length);
@@ -65,5 +66,19 @@ public class Main {
 
         InsertionSort.insertionSort(nums,nums.length);
         System.out.println("Insertion Sort : "+Arrays.toString(nums));
+
+        int[] nums = {10, 20, 30, 40, 50};
+        ArrayList<Integer> list = AlternateElementsOfAnArray.getAlternates(nums);
+        System.out.println(list);
+        */
+
+//        int[] nums = {10, 5, 3, 4, 3, 5, 6};
+        int[] nums = {1, 2, 3, 4, 1, 2, 3, 4};
+        if (DuplicateWithinKDistanceInAnArray.checkDuplicatesWithinK(nums, 3))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+
+
     }
 }

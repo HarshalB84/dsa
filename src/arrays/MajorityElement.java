@@ -1,7 +1,4 @@
-package arrays_hashing;
-
-import java.util.HashMap;
-import java.util.Map;
+package arrays;
 
 public class MajorityElement {
 

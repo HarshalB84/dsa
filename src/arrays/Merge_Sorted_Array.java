@@ -1,4 +1,4 @@
-package arrays_hashing;
+package arrays;
 
 public class Merge_Sorted_Array {
 
